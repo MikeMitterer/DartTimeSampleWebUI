@@ -1,0 +1,114 @@
+---
+build.dart --machine --full
+[{"method":"mapping","params":{"from":"web/darttimesamplewebui.html","to":"web/out/darttimesamplewebui.html"}}]
+Total time spent on web/darttimesamplewebui.html             -- 267 ms
+Total time                                                   -- 285 ms
+build.dart finished [798 ms]
+
+---
+build.dart --machine --changed=web/out/darttimesamplewebui.dart --changed=web/out/darttimesamplewebui.dart.map ...
+Total time                                                   --  14 ms
+build.dart finished [547 ms]
+
+---
+build.dart --machine --changed=web/out/darttimesamplewebui.dart --changed=web/out/darttimesamplewebui.dart.map ...
+Total time                                                   --  14 ms
+build.dart finished [547 ms]
+
+---
+build.dart --machine --changed=pubspec.yaml
+Total time                                                   --  14 ms
+build.dart finished [518 ms]
+
+---
+build.dart --machine --changed=web/darttimesamplewebui.dart
+[{"method":"mapping","params":{"from":"web/darttimesamplewebui.html","to":"web/out/darttimesamplewebui.html"}}]
+Uncaught Error: NoSuchMethodError : method not found: '_addFromInteger@0x36924d72'
+Receiver: null
+Arguments: [80]
+Stack Trace:
+#0      Object.noSuchMethod (dart:core-patch:1737:25)
+#1      int.+ (dart:core-patch:1324:33)
+#2      Parser.translateCharacter (package:analyzer_experimental/src/generated/parser.dart:4380:167)
+#3      Parser.computeStringValue (package:analyzer_experimental/src/generated/parser.dart:376:33)
+#4      Parser.parseStringLiteral (package:analyzer_experimental/src/generated/parser.dart:3451:76)
+#5      Parser.parsePrimaryExpression (package:analyzer_experimental/src/generated/parser.dart:3163:32)
+#6      Parser.parseAssignableExpression (package:analyzer_experimental/src/generated/parser.dart:837:51)
+#7      Parser.parsePostfixExpression (package:analyzer_experimental/src/generated/parser.dart:3061:51)
+#8      Parser.parseUnaryExpression (package:analyzer_experimental/src/generated/parser.dart:3778:34)
+#9      Parser.parseMultiplicativeExpression (package:analyzer_experimental/src/generated/parser.dart:2826:40)
+#10     Parser.parseAdditiveExpression (package:analyzer_experimental/src/generated/parser.dart:705:49)
+#11     Parser.parseShiftExpression (package:analyzer_experimental/src/generated/parser.dart:3320:43)
+#12     Parser.parseRelationalExpression (package:analyzer_experimental/src/generated/parser.dart:3229:49)
+#13     Parser.parseEqualityExpression (package:analyzer_experimental/src/generated/parser.dart:1837:45)
+#14     Parser.parseBitwiseAndExpression (package:analyzer_experimental/src/generated/parser.dart:910:43)
+#15     Parser.parseBitwiseXorExpression (package:analyzer_experimental/src/generated/parser.dart:954:45)
+#16     Parser.parseBitwiseOrExpression (package:analyzer_experimental/src/generated/parser.dart:932:45)
+#17     Parser.parseLogicalAndExpression (package:analyzer_experimental/src/generated/parser.dart:2628:53)
+#18     Parser.parseLogicalOrExpression (package:analyzer_experimental/src/generated/parser.dart:2644:54)
+#19     Parser.parseConditionalExpression (package:analyzer_experimental/src/generated/parser.dart:1587:52)
+#20     Parser.parseExpression2 (package:analyzer_experimental/src/generated/parser.dart:1875:55)
+#21     Parser.parseArgument (package:analyzer_experimental/src/generated/parser.dart:753:30)
+#22     Parser.parseArgumentList (package:analyzer_experimental/src/generated/parser.dart:786:40)
+#23     Parser.parseInstanceCreationExpression (package:analyzer_experimental/src/generated/parser.dart:2498:50)
+#24     Parser.parseNewExpression (package:analyzer_experimental/src/generated/parser.dart:2842:85)
+#25     Parser.parsePrimaryExpression (package:analyzer_experimental/src/generated/parser.dart:3171:32)
+#26     Parser.parseAssignableExpression (package:analyzer_experimental/src/generated/parser.dart:837:51)
+#27     Parser.parsePostfixExpression (package:analyzer_experimental/src/generated/parser.dart:3061:51)
+#28     Parser.parseUnaryExpression (package:analyzer_experimental/src/generated/parser.dart:3778:34)
+#29     Parser.parseMultiplicativeExpression (package:analyzer_experimental/src/generated/parser.dart:2826:40)
+#30     Parser.parseAdditiveExpression (package:analyzer_experimental/src/generated/parser.dart:705:49)
+#31     Parser.parseShiftExpression (package:analyzer_experimental/src/generated/parser.dart:3320:43)
+#32     Parser.parseRelationalExpression (package:analyzer_experimental/src/generated/parser.dart:3229:49)
+#33     Parser.parseEqualityExpression (package:analyzer_experimental/src/generated/parser.dart:1837:45)
+#34     Parser.parseBitwiseAndExpression (package:analyzer_experimental/src/generated/parser.dart:910:43)
+#35     Parser.parseBitwiseXorExpression (package:analyzer_experimental/src/generated/parser.dart:954:45)
+#36     Parser.parseBitwiseOrExpression (package:analyzer_experimental/src/generated/parser.dart:932:45)
+#37     Parser.parseLogicalAndExpression (package:analyzer_experimental/src/generated/parser.dart:2631:92)
+#38     Parser.parseLogicalOrExpression (package:analyzer_experimental/src/generated/parser.dart:2644:54)
+#39     Parser.parseConditionalExpression (package:analyzer_experimental/src/generated/parser.dart:1587:52)
+#40     Parser.parseExpression2 (package:analyzer_experimental/src/generated/parser.dart:1875:55)
+#41     Parser.parseIfStatement (package:analyzer_experimental/src/generated/parser.dart:2414:44)
+#42     Parser.parseNonLabeledStatement (package:analyzer_experimental/src/generated/parser.dart:2887:32)
+#43     Parser.parseStatement2 (package:analyzer_experimental/src/generated/parser.dart:3378:51)
+#44     Parser.parseBlock (package:analyzer_experimental/src/generated/parser.dart:975:44)
+#45     Parser.parseNonLabeledStatement (package:analyzer_experimental/src/generated/parser.dart:2873:24)
+#46     Parser.parseStatement2 (package:analyzer_experimental/src/generated/parser.dart:3378:51)
+#47     Parser.parseForStatement (package:analyzer_experimental/src/generated/parser.dart:2185:39)
+#48     Parser.parseForStatement (package:analyzer_experimental/src/generated/parser.dart:2187:7)
+#49     Parser.parseNonLabeledStatement (package:analyzer_experimental/src/generated/parser.dart:2885:33)
+#50     Parser.parseStatement2 (package:analyzer_experimental/src/generated/parser.dart:3378:51)
+#51     Parser.parseBlock (package:analyzer_experimental/src/generated/parser.dart:975:44)
+#52     Parser.parseFunctionBody (package:analyzer_experimental/src/generated/parser.dart:2226:53)
+#53     Parser.parseFunctionBody (package:analyzer_experimental/src/generated/parser.dart:2235:7)
+#54     Parser.parseMethodDeclaration2 (package:analyzer_experimental/src/generated/parser.dart:2730:42)
+#55     Parser.parseMethodDeclaration (package:analyzer_experimental/src/generated/parser.dart:2711:35)
+#56     Parser.parseClassMember (package:analyzer_experimental/src/generated/parser.dart:1220:36)
+#57     Parser.parseClassMembers (package:analyzer_experimental/src/generated/parser.dart:1240:46)
+#58     Parser.parseClassDeclaration (package:analyzer_experimental/src/generated/parser.dart:1137:34)
+#59     Parser.parseCompilationUnitMember (package:analyzer_experimental/src/generated/parser.dart:1528:35)
+#60     Parser.parseCompilationUnit2 (package:analyzer_experimental/src/generated/parser.dart:1495:66)
+#61     Parser.parseCompilationUnit (package:analyzer_experimental/src/generated/parser.dart:284:33)
+#62     parseCompilationUnit (package:web_ui/src/dart_parser.dart:124:41)
+#63     parseDartCode (package:web_ui/src/dart_parser.dart:86:34)
+#64     Compiler._processDartFile._processDartFile (package:web_ui/src/compiler.dart:210:22)
+#65     _ThenFuture._sendValue (dart:async:411:24)
+
+
+Unhandled exception:
+NoSuchMethodError : method not found: '_addFromInteger@0x36924d72'
+Receiver: null
+Arguments: [80]
+#0      _FutureImpl._scheduleUnhandledError.<anonymous closure> (dart:async:339:9)
+#1      Timer.Timer.<anonymous closure> (dart:async-patch:11:15)
+#2      _Timer._createTimerHandler._handleTimeout (dart:io:7243:28)
+#3      _Timer._createTimerHandler._handleTimeout (dart:io:7251:7)
+#4      _Timer._createTimerHandler.<anonymous closure> (dart:io:7259:23)
+#5      _ReceivePortImpl._handleMessage (dart:isolate-patch:40:92)
+build.dart finished [1739 ms]
+
+---
+build.dart --machine --changed=pubspec.lock
+Total time                                                   --  14 ms
+build.dart finished [528 ms]
+

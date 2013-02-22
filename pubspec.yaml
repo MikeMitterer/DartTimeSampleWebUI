@@ -1,0 +1,7 @@
+name: DartTimeSampleWebUI
+description: A sample WebUI application
+dependencies:
+  browser: any
+  js: any
+  web_ui: any
+  intl: any
